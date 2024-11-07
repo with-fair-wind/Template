@@ -1,0 +1,99 @@
+{
+  "files.defaultLanguage": "cpp", // ctrl+N新建文件后默认的语言
+  "editor.formatOnType": true, // 输入分号(C/C++的语句结束标识)后自动格式化当前这一行的代码
+  "editor.suggest.snippetsPreventQuickSuggestions": false, // clangd的snippets有很多的跳转点，不用这个就必须手动触发Intellisense了
+  "editor.acceptSuggestionOnEnter": "off", // 我个人的习惯，按回车时一定是真正的换行，只有tab才会接受Intellisense
+  // "editor.snippetSuggestions": "top", // （可选）snippets显示在补全列表顶端，默认是inline
+
+  "code-runner.runInTerminal": true, // 设置成false会在“输出”中输出，无法输入
+  "code-runner.executorMap": {
+    "c": "gcc '$fileName' -o '$fileNameWithoutExt.exe' -Wall -O2 -m64 -lm -static-libgcc -fexec-charset=GBK -D__USE_MINGW_ANSI_STDIO && &'./$fileNameWithoutExt.exe'",
+    "cpp": "g++ '$fileName' -o '$fileNameWithoutExt.exe' -std=c++20 -Wall -O2 -m64 -static-libgcc -fexec-charset=GBK && &'./$fileNameWithoutExt.exe'"
+    // "c": "gcc $fileName -o $fileNameWithoutExt.exe -Wall -O2 -m64 -lm -static-libgcc -fexec-charset=GBK -D__USE_MINGW_ANSI_STDIO && $dir$fileNameWithoutExt.exe",
+    // "cpp": "g++ $fileName -o $fileNameWithoutExt.exe -Wall -O2 -m64 -static-libgcc -fexec-charset=GBK && $dir$fileNameWithoutExt.exe"
+  }, // 右键run code时运行的命令；未注释的仅适用于PowerShell（Win10默认）和pwsh，文件名中有空格也可以编译运行；注释掉的适用于cmd（win7默认）、PS和bash，但文件名中有空格时无法运行
+  "code-runner.saveFileBeforeRun": true, // run code前保存
+  "code-runner.preserveFocus": true, // 若为false，run code后光标会聚焦到终端上。如果需要频繁输入数据可设为false
+  "code-runner.clearPreviousOutput": false, // 每次run code前清空属于code runner的终端消息，默认false
+  "code-runner.ignoreSelection": true, // 默认为false，效果是鼠标选中一块代码后可以单独执行，但C是编译型语言，不适合这样用
+  "code-runner.fileDirectoryAsCwd": true, // 将code runner终端的工作目录切换到文件目录再运行，对依赖cwd的程序产生影响；如果为false，executorMap要加cd $dir
+
+  "C_Cpp.clang_format_sortIncludes": true,
+  "files.associations": {
+    "exception": "cpp",
+    "memory": "cpp",
+    "utility": "cpp",
+    "xstring": "cpp",
+    "iosfwd": "cpp",
+    "xlocale": "cpp",
+    "iostream": "cpp",
+    "initializer_list": "cpp",
+    "type_traits": "cpp",
+    "xutility": "cpp",
+    "queue": "cpp",
+    "xiosbase": "cpp",
+    "random": "cpp",
+    "algorithm": "cpp",
+    "deque": "cpp",
+    "ios": "cpp",
+    "istream": "cpp",
+    "ostream": "cpp",
+    "streambuf": "cpp",
+    "tuple": "cpp",
+    "vector": "cpp",
+    "xmemory0": "cpp",
+    "list": "cpp",
+    "xhash": "cpp",
+    "unordered_map": "cpp",
+    "functional": "cpp",
+    "xlocnum": "cpp",
+    "system_error": "cpp",
+    "xstddef": "cpp",
+    "xtr1common": "cpp",
+    "string": "cpp",
+    "ratio": "cpp",
+    "chrono": "cpp",
+    "array": "cpp",
+    "atomic": "cpp",
+    "*.tcc": "cpp",
+    "cctype": "cpp",
+    "clocale": "cpp",
+    "cmath": "cpp",
+    "cstdarg": "cpp",
+    "cstddef": "cpp",
+    "cstdint": "cpp",
+    "cstdio": "cpp",
+    "cstdlib": "cpp",
+    "cstring": "cpp",
+    "ctime": "cpp",
+    "cwchar": "cpp",
+    "cwctype": "cpp",
+    "iterator": "cpp",
+    "map": "cpp",
+    "memory_resource": "cpp",
+    "optional": "cpp",
+    "string_view": "cpp",
+    "fstream": "cpp",
+    "iomanip": "cpp",
+    "limits": "cpp",
+    "new": "cpp",
+    "sstream": "cpp",
+    "stdexcept": "cpp",
+    "typeinfo": "cpp",
+    "thread": "cpp",
+    "mutex": "cpp",
+    "condition_variable": "cpp",
+    "resumable": "cpp",
+    "future": "cpp",
+    "xxatomic": "cpp",
+    "bit": "cpp",
+    "compare": "cpp",
+    "concepts": "cpp",
+    "numeric": "cpp",
+    "numbers": "cpp"
+  },
+  "cmake.sourceDirectory": "D:/Project_All/C++_Project/Template/class_template_split_file",
+  "C_Cpp.default.compilerPath": "F:\\soft\\x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev1\\mingw64\\bin\\g++.exe",
+  "C_Cpp.dimInactiveRegions": true
+  // "cmake.sourceDirectory": "D:/BaiduSyncdisk/C++_Project_All/Template/display_instantiation" // 格式化时调整include的顺序（按字母排序）
+}

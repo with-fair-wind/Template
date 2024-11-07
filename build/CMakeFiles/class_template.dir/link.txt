@@ -1,0 +1,3 @@
+F:\soft\cmake-3.30.2-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\class_template.dir/objects.a
+F:\soft\x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev1\mingw64\bin\ar.exe qc CMakeFiles\class_template.dir/objects.a @CMakeFiles\class_template.dir\objects1.rsp
+F:\soft\x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev1\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\class_template.dir/objects.a -Wl,--no-whole-archive -o D:\Project_All\C++_Project\Template\class_template_split_file\bin\class_template.exe -Wl,--out-implib,D:\Project_All\C++_Project\Template\class_template_split_file\bin\libclass_template.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\class_template.dir\linkLibs.rsp
