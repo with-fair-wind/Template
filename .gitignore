@@ -4,3 +4,4 @@ class_template_split_file/bin/
 display_instantiation/bin/
 function_template_split_file/bin/
 include_command/*.exe
+.vscode/
