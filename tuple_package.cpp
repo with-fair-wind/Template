@@ -1,13 +1,3 @@
-/*
- * @Author: kk 921232958@qq.com
- * @Date: 2024-08-29 23:15:26
- * @LastEditors: kk 921232958@qq.com
- * @LastEditTime: 2024-08-31 13:59:38
- * @FilePath: \Template\9.cpp
- * @Description:
- *
- * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved.
- */
 // 其它
 #include <array>
 #include <concepts>

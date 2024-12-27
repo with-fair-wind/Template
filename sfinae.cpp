@@ -1,13 +1,3 @@
-/*
- * @Author: kk 921232958@qq.com
- * @Date: 2024-08-25 14:25:33
- * @LastEditors: kk 921232958@qq.com
- * @LastEditTime: 2024-08-31 14:12:30
- * @FilePath: \Template\7.cpp
- * @Description:
- *
- * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved.
- */
 // SFINAE
 #include <array>
 #include <functional>
