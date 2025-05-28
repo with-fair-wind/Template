@@ -4,6 +4,7 @@
 #include <functional>
 #include <iostream>
 #include <numeric>
+#include <string>
 #include <type_traits>
 
 using namespace std::string_literals;
@@ -58,8 +59,8 @@ int main()
 }
 #endif
 
-#if 0
-#define T7
+#if 1
+#define T6
 #ifdef T1
 template <typename T = int>
 void f() {}
@@ -253,7 +254,7 @@ int main()
 }
 #endif
 
-#if 1
+#if 0
 template <typename... Args, typename RT = std::common_type_t<Args...>>
 RT sum(const Args &...args)
 {

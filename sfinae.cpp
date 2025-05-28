@@ -322,7 +322,7 @@ int main()
 #endif
 
 #ifdef T3
-// 我要写一个函数模板 add，我要求传入的对象需要支持 + 以及它需要有别名 type ，成员 value、f。
+// 我要写一个函数模板 add，我要求传入的对象需要支持默认构造、 + 以及它需要有别名 type ，成员 value、f。
 template <typename T, typename = std::void_t<decltype(T{} + T{}), typename T::type, decltype(&T::value), decltype(&T::f)>>
 auto add(const T &t1, const T &t2)
 {
@@ -348,7 +348,7 @@ int main()
 #endif
 
 #ifdef T4
-// 我要写一个函数模板 add，我要求传入的对象需要支持默认构造、+ 以及它需要有别名 type ，成员 value、f。
+// 我要写一个函数模板 add，我要求传入的对象需要支持 + 以及它需要有别名 type ，成员 value、f。
 // std::declval
 template <typename T, typename = std::void_t<decltype(std::declval<T>() + std::declval<T>()), typename T::type, decltype(&T::value), decltype(&T::f)>>
 auto add(const T &t1, const T &t2)
